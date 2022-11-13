@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-let hours = new Date(2022, 10, 13, 20).getHours();
+let hours = new Date(2022, 10, 13, 5).getHours();
 let greeting = '';
 let cssStyle = {
   color: "Green"
@@ -26,6 +26,5 @@ else {
 const el = <div><h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1></div>
 ReactDOM.render(el, document.getElementById('root'));
 
-// export default ;
 
 
