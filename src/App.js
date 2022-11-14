@@ -1,16 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Heading from './Components/heading.js';
+import Para from './Components/para.js';
+import List from './Components/list.js';
 import './App.css';
 import './index.js';
 
 const App = () => {
   return (
-    <div className="App">
-      <p>Vinayshhgdhfsd</p>
-      <H />
-    </div>
+    <>
+      <Heading />
+      <Para />
+      <List />
+    </>
   );
 }
-ReactDOM.render(< App />, document.getElementById('root'));
+
 
 export default App;
