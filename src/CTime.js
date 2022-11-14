@@ -1,19 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 
-let getTime = new Date().toLocaleTimeString();
 
 const Time = () => {
-    const [getTime, currentTime] = useState(getTime);
+    let getTime = new Date().toLocaleTimeString();
+    let [time, currentTime] = useState(getTime);
     function updateTime() {
+        getTime = new Date().toLocaleTimeString();
         currentTime(getTime);
     }
     return (
         <div className='container'>
-            <h1>getTime</h1>
+            <h1>{time} </h1>
             <button onClick={updateTime}>CurrentTime</button>
         </div>
     );
 
 }
-
 export default Time;
