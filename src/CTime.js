@@ -9,10 +9,15 @@ const Time = () => {
         getTime = new Date().toLocaleTimeString();
         currentTime(getTime);
     }
+    // let t = setInterval(updateTime, 1000);
+    function stopTime() {
+        clearTimeout(updateTime, 50);
+    }
     return (
         <div className='container'>
             <h1>{time} </h1>
-            <button onClick={updateTime}>CurrentTime</button>
+            <button onClick={updateTime} >CurrentTime</button>
+            <button onClick={stopTime} >STOP</button>
         </div>
     );
 
