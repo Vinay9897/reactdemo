@@ -1,5 +1,5 @@
-import './Rater.css';
-function Rater() {
+import './Ratar.css';
+function Ratar() {
     return (
         <ul className="rating">
             <li className="filled">{'\u2605'}</li>
@@ -8,6 +8,6 @@ function Rater() {
             <li>{'\u2605'}</li>
             <li>{'\u2605'}</li>
         </ul>
-    )
+    );
 }
-export default Rater;
+export default Ratar;

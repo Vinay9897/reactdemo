@@ -7,10 +7,12 @@ import * as Cal from './Components/calculator.jsx';
 import Time from './CTime.js'
 import './App.css';
 import './index.js';
+import Product from './Project1/laptop.js';
 
 const App = () => {
   return (
     <>
+      <Product />
       <Time />
       <Heading />
       <Para />
