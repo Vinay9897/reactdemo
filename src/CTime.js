@@ -1,7 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-
-
 const Time = () => {
     let getTime = new Date().toLocaleTimeString();
     let [time, currentTime] = useState(getTime);
