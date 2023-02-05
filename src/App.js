@@ -9,11 +9,13 @@ import React from 'react';
 // import './index.js';
 // import Product from './Project1/laptop.js';
 import Parent from './Project2/parent.js';
+import Employees from './Project2/employees.js';
 
 const App = () => {
   return (
     <>
       <Parent />
+      <Employees />
       {/* <Product />
       <Time />
       <Heading />
