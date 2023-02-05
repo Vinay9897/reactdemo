@@ -12,14 +12,14 @@ import Product from './Project1/laptop.js';
 const App = () => {
   return (
     <>
-      <Product />
+      {/* <Product />
       <Time />
       <Heading />
       <Para />
       <List />
       <li>{Cal.Addition(2, 4)}</li>
       <li>{Cal.Multiplication(2, 4)}</li>
-      <li>{Cal.Division(2, 4)}</li>
+      <li>{Cal.Division(2, 4)}</li> */}
     </>
   );
 }

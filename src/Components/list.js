@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
 const List = () => {
-    var employees = [{ empId: 1234, name: "Vinay", position: "SE" },
+    const [employees, setEmployees] = useState([{ empId: 1234, name: "Vinay", position: "SE" },
     { empId: 2345, name: "Shivam", position: "SDE" },
-    { empId: 3456, name: "Priyansh", position: "ASE" }];
+    { empId: 3456, name: "Priyansh", position: "ASE" }]);
+
+    const addEmployee = () => {
+        setEmployees([
+            ...employees,
+            { empId: 6789, name: "Sam", designation: "TL" },
+        ]);
+    };
+
     return (<>
         <table>
             <thead>
@@ -25,6 +34,6 @@ const List = () => {
             </tbody>
         </table>
     </>);
-}
+};
 
 export default List;

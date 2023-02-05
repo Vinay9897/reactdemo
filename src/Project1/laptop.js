@@ -18,7 +18,6 @@ function Product() {
                         <span style={{ fontSize: "9px" }}>3/5</span>
                     </div>
                 </div>
-
             </div>
         </div >
 
