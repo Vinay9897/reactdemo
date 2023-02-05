@@ -19,3 +19,5 @@ class Parent extends React.Component {
         </ReactFragment >)
     }
 }
+
+export default Parent;
