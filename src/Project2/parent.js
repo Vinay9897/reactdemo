@@ -9,15 +9,16 @@ class Parent extends React.Component {
         }
     }
     update = (value) => {
+        console.log(value);
         let newValue = value;
-        this.setState({ newValue })
+        this.setState({ name: newValue })
     }
     render() {
-        return (<ReactFragment>
+        return (<>
             <h1>{this.state.name}</h1><br></br>
             <Child nameValue={this.state.name} update={this.update}></Child>
-        </ReactFragment >)
-    }
-}
+        </>)
+    };
+};
 
 export default Parent;

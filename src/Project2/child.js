@@ -7,14 +7,14 @@ class Child extends React.Component {
         }
     }
     handleChange = () => {
-        let newValue = 'Jack'
-        this.setState({ nameValue: newValue })
-        this.props.update(newValue)
+        let newValue = 'Jack';
+        this.setState({ nameValue: newValue });
+        this.props.update(newValue);
     }
     render() {
-        return (<React.Fragment>
+        return (<>
             <button onClick={this.handleChange}>Change</button>
-        </React.Fragment>)
+        </>)
     }
 }
 export default Child;
