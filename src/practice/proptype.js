@@ -1,5 +1,4 @@
 import Proptype from 'prop-types';
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 
 // Create a component with properties defined for
@@ -33,7 +32,7 @@ Comp.propType = {
     addToCart: Proptype.func,
 };
 
-App.defaultProps = {
+Comp.defaultProps = {
     productName: "iPhone",
     price: "36000",
     colors: ["Black"],

@@ -1,6 +1,7 @@
 import React from "react";
 import Child from './child.js';
-
+// class comp to class component
+// passing method as a props
 class Parent extends React.Component {
     constructor() {
         super();
@@ -16,7 +17,7 @@ class Parent extends React.Component {
     render() {
         return (<>
             <h1>{this.state.name}</h1><br></br>
-            <Child nameValue={this.state.name} update={this.update}></Child>
+            <Child update={this.update}></Child>
         </>)
     };
 };

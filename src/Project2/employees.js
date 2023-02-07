@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Employee from "./employee";
+// functional component to functional component
+// passing addEmployee method as  prop to Employee method
 const Employees = () => {
     const [employees, setEmployees] = useState([
         { empId: 1234, name: "John", designation: "SE" },

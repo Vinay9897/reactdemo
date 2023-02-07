@@ -11,12 +11,11 @@ import Time from './CTime.js'
 import Parent from './Project2/parent.js';
 import Employees from './Project2/employees.js';
 import Card from './Project2/card';
-import Compo from './Project2/content';
-
+import PropType from './practice/proptype';
 const App = () => {
   return (
     <>
-      <Compo />
+      <PropType />
       <Time />
       <Parent />
       <Employees />

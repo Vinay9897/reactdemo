@@ -1,4 +1,5 @@
 import React from 'react';
+// child class component
 class Child extends React.Component {
     constructor() {
         super()
@@ -9,6 +10,7 @@ class Child extends React.Component {
     handleChange = () => {
         let newValue = 'Jack';
         this.setState({ nameValue: newValue });
+        // update method 
         this.props.update(newValue);
     }
     render() {

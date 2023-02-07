@@ -1,3 +1,4 @@
+// child component
 const Employee = ({ employees, addEmployee }) => {
     return (<>
         <table style={{ width: '60%' }} className='table'>
