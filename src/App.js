@@ -4,18 +4,23 @@ import React from 'react';
 // import Para from './Components/para.js';
 // import List from './Components/list.js';
 // import * as Cal from './Components/calculator.jsx';
-// import Time from './CTime.js'
+import Time from './CTime.js'
 // import './App.css';
 // import './index.js';
 // import Product from './Project1/laptop.js';
 import Parent from './Project2/parent.js';
 import Employees from './Project2/employees.js';
+import Card from './Project2/card';
+import Compo from './Project2/content';
 
 const App = () => {
   return (
     <>
+      <Compo />
+      <Time />
       <Parent />
       <Employees />
+      <Card />
       {/* <Product />
       <Time />
       <Heading />
