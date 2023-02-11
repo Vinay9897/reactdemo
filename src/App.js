@@ -12,9 +12,11 @@ import Parent from './Project2/parent.js';
 import Employees from './Project2/employees.js';
 import Card from './Project2/card';
 import PropType from './practice/proptype';
+import MountDemo from './LifeCycleMethods/mount';
 const App = () => {
   return (
     <>
+      <MountDemo />
       <PropType />
       <Time />
       <Parent />
