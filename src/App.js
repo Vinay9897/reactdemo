@@ -13,10 +13,11 @@ import Employees from './Project2/employees.js';
 import Card from './Project2/card';
 import PropType from './practice/proptype';
 import MountDemo from './LifeCycleMethods/mount';
+import ErrorHandlers from './LifeCycleMethods/errorhandler.js';
 const App = () => {
   return (
     <>
-      <MountDemo />
+      <ErrorHandlers><MountDemo /></ErrorHandlers>
       <PropType />
       <Time />
       <Parent />

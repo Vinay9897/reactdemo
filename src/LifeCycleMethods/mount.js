@@ -14,14 +14,15 @@ class MountDemo extends React.Component {
     componentDidUpdate() {
         this.interval = this.setInterval(this.start, 1000);
     }
-    componentWillUnmount() {
-        console.log('Component WILL UNMOUNT!')
-        clearInterval(this.interval);
-    }
+    // componentWillUnmount() {
+    //     console.log('Component WILL UNMOUNT!')
+    //     clearInterval(this.interval);
+    // }
     render() {
         return (
             <React.Fragment>
                 <Updates new={this.state.count} />
+                <button onClick={this.start}>Update</button>
             </React.Fragment>
         )
     };
